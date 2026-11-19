@@ -1,5 +1,7 @@
 # Parte 2 — Esqueleto da solution
 
+Português · [English](02-esqueleto-da-solution.en.md)
+
 Registro do que foi criado em 19 de novembro de 2026.
 
 A solution compila, os projetos se referenciam na direção da Clean Architecture e ainda não existe regra de negócio, banco nem endpoint. Este arquivo é o retrato desse corte.
@@ -23,9 +25,13 @@ Os dois testes são o exemplo vazio do template xUnit (`Test1`). Um `[Fact]` sem
 financial-operations-api/
 ├── FinancialOperations.sln
 ├── .gitignore
+├── README.md
+├── README.pt-BR.md
 ├── docs/
 │   ├── ROADMAP.md
-│   └── 02-esqueleto-da-solution.md
+│   ├── ROADMAP.en.md
+│   ├── 02-esqueleto-da-solution.md
+│   └── 02-esqueleto-da-solution.en.md
 ├── src/
 │   ├── FinancialOperations.Domain/
 │   ├── FinancialOperations.Application/

@@ -1,8 +1,8 @@
 # Financial Operations API
 
-Fictional API for customer, account, ledger, and transfer operations. It is a portfolio project for practicing Clean Architecture on .NET, from an empty solution through persistence, HTTP, authentication, and tests.
+English · [Português](README.pt-BR.md)
 
-The step-by-step notes in [`docs/`](docs/ROADMAP.md) are written in Portuguese.
+Fictional API for customer, account, ledger, and transfer operations. It is a portfolio project for practicing Clean Architecture on .NET, from an empty solution through persistence, HTTP, authentication, and tests.
 
 ## Stack
 
@@ -36,5 +36,7 @@ dotnet test
 
 ## Documentation
 
-- [Roadmap](docs/ROADMAP.md) — the twelve parts and the order they are built
-- [Part 2 — solution skeleton](docs/02-esqueleto-da-solution.md) — commands, references, and what the template left behind
+Every document in `docs/` exists in Portuguese and English. English files use the `.en.md` suffix.
+
+- [Roadmap](docs/ROADMAP.en.md) — the twelve parts and the order they are built · [Português](docs/ROADMAP.md)
+- [Part 2 — solution skeleton](docs/02-esqueleto-da-solution.en.md) — commands, references, and what the template left behind · [Português](docs/02-esqueleto-da-solution.md)

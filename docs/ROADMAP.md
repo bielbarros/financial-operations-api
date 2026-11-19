@@ -1,5 +1,7 @@
 # Financial Operations API — roteiro de construção
 
+Português · [English](ROADMAP.en.md)
+
 API fictícia de operações financeiras, feita para portfólio.
 
 Stack alvo: **.NET 9** · C# · ASP.NET Core · EF Core · SQL Server · JWT · Swagger · Docker.
@@ -7,6 +9,17 @@ Stack alvo: **.NET 9** · C# · ASP.NET Core · EF Core · SQL Server · JWT · 
 SDK já instalado nesta máquina: .NET 9.0.311 (também há o 8.0.428). A solution nasce em `net9.0`.
 
 Este arquivo é o mapa. O código de cada parte só entra quando a parte anterior estiver clara.
+
+## Idiomas
+
+Cada documento em `docs/` tem duas versões, nascidas juntas. O nome em português é o arquivo base. O inglês usa o mesmo nome com o sufixo `.en.md`.
+
+| Português | English |
+| --- | --- |
+| [ROADMAP.md](ROADMAP.md) | [ROADMAP.en.md](ROADMAP.en.md) |
+| [02-esqueleto-da-solution.md](02-esqueleto-da-solution.md) | [02-esqueleto-da-solution.en.md](02-esqueleto-da-solution.en.md) |
+
+Na raiz, o GitHub abre o `README.md` em inglês. O par em português é o [README.pt-BR.md](../README.pt-BR.md).
 
 ---
 
@@ -58,9 +71,15 @@ financial-operations-api/
 │   ├── FinancialOperations.UnitTests/
 │   └── FinancialOperations.IntegrationTests/
 ├── docs/
-│   └── ROADMAP.md
-└── README.md          (parte 12)
+│   ├── ROADMAP.md
+│   ├── ROADMAP.en.md
+│   ├── 02-esqueleto-da-solution.md
+│   └── 02-esqueleto-da-solution.en.md
+├── README.md
+└── README.pt-BR.md
 ```
+
+O README curto, nas duas línguas, já está na raiz. A parte 12 amplia esse texto com Docker, autenticação e o exemplo de transferência.
 
 `tests/` fica fora de `src/` porque teste não é o produto. Os projetos de teste referenciam o produto; o produto não referencia teste.
 
@@ -158,7 +177,7 @@ Nesta parte não há `.sln`, classe, tabela, Docker nem endpoint. O desenho acim
 
 Objetivo: criar a solution, os quatro projetos de `src/`, os dois de `tests/`, e as referências do diagrama. Os projetos compilam vazios.
 
-Registro do que ficou no disco, com os comandos e o grafo de referências: [02-esqueleto-da-solution.md](02-esqueleto-da-solution.md).
+Registro do que ficou no disco, com os comandos e o grafo de referências: [02-esqueleto-da-solution.md](02-esqueleto-da-solution.md) · [English](02-esqueleto-da-solution.en.md).
 
 `dotnet build` concluiu sem erro e `dotnet test` passou nos 2 testes de exemplo do template. O Domain não referencia ninguém.
 
@@ -294,7 +313,7 @@ Pronto quando: `dotnet test` passa e os nomes dos testes descrevem a regra, não
 Objetivo: um repositório que um recrutador abre e entende em poucos minutos.
 
 - `Dockerfile` e `docker-compose` com API + SQL Server.
-- README: o que é, como subir, como autenticar, exemplo de transferência, diagrama das dependências, decisões (por que `LedgerEntry`, por que saldo na conta).
+- README, nas duas línguas: o que é, como subir, como autenticar, exemplo de transferência, diagrama das dependências, decisões (por que `LedgerEntry`, por que saldo na conta).
 - `.gitignore` de .NET, sem `bin/`, `obj/`, user secrets ou connection string real.
 - Commits pequenos, um assunto por commit, ao longo da trilha (não um commit único no final).
 
