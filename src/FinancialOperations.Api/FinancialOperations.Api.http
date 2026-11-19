@@ -1,0 +1,5 @@
+@FinancialOperations.Api_HostAddress = http://localhost:5158
+
+### No business routes yet. The OpenAPI document is available in Development.
+GET {{FinancialOperations.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
